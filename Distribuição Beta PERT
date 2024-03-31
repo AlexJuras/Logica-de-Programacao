@@ -1,0 +1,14 @@
+#criação de um programa que calcule o prazo PERT de um projeto e suas fases
+
+#prazoo, prazom e prazop são respectivamente o prazo Otimista, prazo mais provável e o prazo mais pessimista de uma fase do projeto
+prazoo = float(input("Informe o prazo otimista:"))
+prazom = float(input("Informe o prazo mais provável:"))
+prazop = float(input("Informe o prazo pessimista:"))
+
+media = (prazoo+(4*prazom)+prazop)/6
+desvio = (prazop-prazoo)/6
+variancia = ((prazop-prazoo)/6)**2
+
+print("A duração PERT é: %.1f" %media)
+print("O desvio padrão é: %.1f" %desvio)
+print("A variância é %.1f:" %variancia)
