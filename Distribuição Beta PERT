@@ -11,4 +11,4 @@ variancia = ((prazop-prazoo)/6)**2
 
 print("A duração PERT é: %.1f" %media)
 print("O desvio padrão é: %.1f" %desvio)
-print("A variância é %.1f:" %variancia)
+print("A variância é: %.1f" %variancia)
